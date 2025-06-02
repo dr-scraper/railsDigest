@@ -36,3 +36,5 @@
 /config/credentials/development.key
 
 /config/credentials/
+
+/config/credentials/development,.key
