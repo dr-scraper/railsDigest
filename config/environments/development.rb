@@ -32,13 +32,24 @@ Rails.application.configure do
   config.active_storage.service = :local
 
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = false # consider turning this to true for production
 
   # Make template changes take effect immediately.
   config.action_mailer.perform_caching = false
 
   # Set localhost to be used by links generated in mailer templates.
   config.action_mailer.default_url_options = { host: "localhost", port: 3000 }
+
+  config.action_mailer.perform_deliveries = true
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address:         Rails.application.credentials.dig(:smtp, :address),
+    port:            Rails.application.credentials.dig(:smtp, :port),
+    user_name:       Rails.application.credentials.dig(:smtp, :user_name),
+    password:        Rails.application.credentials.dig(:smtp, :password),
+    authentication:  Rails.application.credentials.dig(:smtp, :authentication),
+    enable_starttls: true }
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log

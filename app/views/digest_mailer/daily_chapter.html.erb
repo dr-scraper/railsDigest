@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1><%= @article.title %></h1>
+    
+    <div class="content">
+      <%= @article.content.html_safe %>
+    </div>
+    
+    <hr>
+    
+    <p>
+      Read more at: <%= link_to "Full Guide", @article.url %>
+    </p>
+  </body>
+</html>
