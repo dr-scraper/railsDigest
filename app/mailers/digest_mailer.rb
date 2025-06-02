@@ -1,5 +1,5 @@
 class DigestMailer < ApplicationMailer
-  default from: 'your-email@example.com'
+  default from: 'byteMail101@gmail.com'
 
   def daily_chapter(user)
     @user = user
