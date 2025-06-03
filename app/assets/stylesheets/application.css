@@ -1,4 +1,108 @@
-.interstitial.code {
-  background-color: #4b4a4a;
-  color: #ffffff;
+code {
+  display: block;
+  font-family: 'Menlo', 'Monaco', 'Courier New', 'monospace';
+  font-size: 14px;
+  line-height: 1.4;
+  background-color: #282c34;
+  color: #c0c8d7;
+  padding: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 1.5em 0;
+  border-radius: 6px;
+  overflow-x: auto;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid #3e4451;
+}
+
+.no {
+  color: #e06c75;
+}
+
+.p {
+  color: #e9c41f;
+}
+
+.nf {
+  color: #98c379;
+}
+
+.ss {
+  color: #c678dd;
+}
+
+.c1 {
+  color: #c0c3c4;
+}
+
+.k {
+  color: #a679e5;
+}
+
+.n {
+  color: #e6c07b;
+}
+
+.o {
+  color: #abb2bf;
+}
+
+.mi {
+  color: #d19a66;
+}
+
+.cp {
+  color: #e06c75;
+}
+
+.vi {
+  color: #61afef;
+}
+
+.pi {
+  color: #98c379;
+}
+
+.na {
+  color: #c678dd;
+}
+
+.m {
+  color: #56b6c2;
+}
+
+.go {
+  color: #d19a66;
+}
+
+.kt {
+  color: #e06c75;
+}
+
+.gp {
+  color: #61afef;
+}
+
+.s2 {
+  color: #98c379;
+}
+
+.nc {
+  color: #17ccba;
+}
+
+.s {
+  color: #e5e510;
+}
+
+.nx {
+  color: #c678dd;
+}
+
+.nb {
+  color: #1cf17c;
+}
+
+.kp {
+  color: #405ed8;
 }
